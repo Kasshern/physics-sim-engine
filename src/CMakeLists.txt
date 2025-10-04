@@ -9,7 +9,7 @@ target_sources(physim PRIVATE
 
     # Integrators module (Phase 2)
     integrators/integrator.cpp
-    # integrators/rk4.cpp
+    integrators/rk4.cpp
     # integrators/rk45.cpp
     # integrators/dopri.cpp
     # forces/gravity.cpp
