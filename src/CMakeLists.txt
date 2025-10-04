@@ -11,9 +11,14 @@ target_sources(physim PRIVATE
     integrators/integrator.cpp
     integrators/rk4.cpp
     integrators/rk45.cpp
+
+    # Forces module (Phase 2)
+    forces/force.cpp
+    forces/gravity.cpp
+    forces/j2_gravity.cpp
+
+    # Future modules
     # integrators/dopri.cpp
-    # forces/gravity.cpp
-    # forces/aspherical_gravity.cpp
     # nbody/particle.cpp
     # nbody/system.cpp
     # nbody/propagator.cpp
