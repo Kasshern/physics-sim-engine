@@ -7,12 +7,10 @@ target_sources(physim PRIVATE
     core/frame.cpp
     core/logging.cpp
 
-    # Additional modules will be added in subsequent phases
-    # integrators/rk4.cpp
-    # integrators/rk45.cpp
-    # integrators/dopri.cpp
+    # Forces module (Phase 2)
+    forces/force.cpp
     # forces/gravity.cpp
-    # forces/aspherical_gravity.cpp
+    # forces/j2_gravity.cpp
     # nbody/particle.cpp
     # nbody/system.cpp
     # nbody/propagator.cpp
