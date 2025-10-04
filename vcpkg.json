@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "physics-sim-engine",
+  "version-string": "0.1.0",
+  "description": "Production-grade GPU-accelerated physics simulation engine for spacecraft dynamics and orbital mechanics",
+  "homepage": "https://github.com/yourusername/physics-sim-engine",
+  "license": "MIT",
+  "supports": "!(uwp | arm)",
+  "dependencies": [
+    {
+      "name": "eigen3",
+      "version>=": "3.4.0"
+    },
+    {
+      "name": "boost-odeint",
+      "version>=": "1.83.0"
+    },
+    {
+      "name": "boost-numeric-ublas",
+      "version>=": "1.83.0"
+    },
+    {
+      "name": "spdlog",
+      "version>=": "1.12.0",
+      "features": ["fmt"]
+    },
+    {
+      "name": "fmt",
+      "version>=": "10.1.1"
+    },
+    {
+      "name": "cli11",
+      "version>=": "2.3.2"
+    },
+    {
+      "name": "cereal",
+      "version>=": "1.3.2"
+    },
+    {
+      "name": "gtest",
+      "version>=": "1.14.0"
+    },
+    {
+      "name": "benchmark",
+      "version>=": "1.8.3"
+    }
+  ],
+  "features": {
+    "visualization": {
+      "description": "Enable real-time 3D visualization with OpenGL",
+      "dependencies": [
+        "glfw3",
+        "glad",
+        {
+          "name": "imgui",
+          "features": ["glfw-binding", "opengl3-binding"]
+        }
+      ]
+    },
+    "python": {
+      "description": "Python bindings via pybind11",
+      "dependencies": [
+        {
+          "name": "pybind11",
+          "version>=": "2.11.1"
+        }
+      ]
+    },
+    "collision": {
+      "description": "Collision detection and contact resolution",
+      "dependencies": [
+        "fcl",
+        "bullet3"
+      ]
+    },
+    "io": {
+      "description": "Advanced I/O capabilities (HDF5)",
+      "dependencies": [
+        "hdf5"
+      ]
+    },
+    "cuda": {
+      "description": "CUDA GPU acceleration support",
+      "supports": "linux | windows"
+    }
+  },
+  "builtin-baseline": "2024-01-01"
+}

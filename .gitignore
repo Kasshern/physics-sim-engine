@@ -1,0 +1,130 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# Compiled Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# vcpkg
+vcpkg_installed/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.user
+*.suo
+*.sln.docstates
+
+# Code coverage
+*.gcov
+*.gcda
+*.gcno
+coverage/
+*.info
+
+# Profiling
+*.prof
+perf.data*
+gmon.out
+callgrind.out.*
+
+# Logs
+*.log
+logs/
+
+# Output data
+data/*.csv
+data/*.hdf5
+data/*.h5
+*.vtk
+*.vtu
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Documentation
+docs/_build/
+docs/html/
+docs/latex/
+*.dox.xml
+
+# Temporary files
+*.tmp
+*.bak
+*.swn
+*~.nib
+local_settings.py
+db.sqlite3
+
+# Package managers
+Thumbs.db
