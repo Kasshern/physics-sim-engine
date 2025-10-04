@@ -10,7 +10,7 @@ target_sources(physim PRIVATE
     # Forces module (Phase 2)
     forces/force.cpp
     forces/gravity.cpp
-    # forces/j2_gravity.cpp
+    forces/j2_gravity.cpp
     # nbody/particle.cpp
     # nbody/system.cpp
     # nbody/propagator.cpp
