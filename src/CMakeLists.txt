@@ -7,7 +7,8 @@ target_sources(physim PRIVATE
     core/frame.cpp
     core/logging.cpp
 
-    # Additional modules will be added in subsequent phases
+    # Integrators module (Phase 2)
+    integrators/integrator.cpp
     # integrators/rk4.cpp
     # integrators/rk45.cpp
     # integrators/dopri.cpp
