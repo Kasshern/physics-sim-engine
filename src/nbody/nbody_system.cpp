@@ -158,7 +158,11 @@ Vec3 NBodySystem::center_of_mass() const {
         M += p.mass();
     }
 
-    return (M > 0.0) ? (r_cm / M) : Vec3::Zero();
+    if (M > 0.0) {
+        return r_cm / M;
+    } else {
+        return Vec3::Zero();
+    }
 }
 
 Vec3 NBodySystem::center_of_mass_velocity() const {
@@ -170,7 +174,11 @@ Vec3 NBodySystem::center_of_mass_velocity() const {
         M += p.mass();
     }
 
-    return (M > 0.0) ? (v_cm / M) : Vec3::Zero();
+    if (M > 0.0) {
+        return v_cm / M;
+    } else {
+        return Vec3::Zero();
+    }
 }
 
 Vec3 NBodySystem::total_momentum() const {
