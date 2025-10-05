@@ -36,7 +36,7 @@ int main() {
     std::cout << "  Speed of light = " << constants::SPEED_OF_LIGHT << " m/s\n";
 
     // Test time system
-    Time j2000 = Time(constants::J2000_JD, TimeScale::TT);
+    Time j2000 = Time(J2000_JD, TimeScale::TT);
     std::cout << "\nTime system:\n";
     std::cout << "  J2000.0 JD = " << j2000.jd() << "\n";
     std::cout << "  J2000.0 MJD = " << j2000.mjd() << "\n";
