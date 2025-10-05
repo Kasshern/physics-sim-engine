@@ -9,7 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Project options
 option(PHYSIM_BUILD_TESTS "Build tests" ON)
-option(PHYSIM_BUILD_BENCHMARKS "Build benchmarks" ON)
+option(PHYSIM_BUILD_BENCHMARKS "Build benchmarks" OFF)
 option(PHYSIM_BUILD_EXAMPLES "Build examples" ON)
 option(PHYSIM_BUILD_PYTHON "Build Python bindings" OFF)
 option(PHYSIM_ENABLE_CUDA "Enable CUDA GPU acceleration" OFF)
