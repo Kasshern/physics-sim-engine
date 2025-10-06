@@ -17,11 +17,12 @@ target_sources(physim PRIVATE
     forces/gravity.cpp
     forces/j2_gravity.cpp
 
+    # N-Body module (Phase 3)
+    nbody/particle.cpp
+    nbody/nbody_system.cpp
+
     # Future modules
     # integrators/dopri.cpp
-    # nbody/particle.cpp
-    # nbody/system.cpp
-    # nbody/propagator.cpp
     # attitude/quaternion.cpp
     # attitude/dynamics.cpp
     # io/checkpoint.cpp
